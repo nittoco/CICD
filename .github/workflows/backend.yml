@@ -1,5 +1,5 @@
 name: Check current directory
-run: pwd
+- run: pwd
 
 name: backend
 on:
