@@ -1,6 +1,3 @@
-name: Check current directory
-- run: pwd
-
 name: backend
 on:
   push:
@@ -15,7 +12,7 @@ jobs:
       - uses: actions/setup-node@v3
         with: 
           node-version: 16.x
-
+      - run: pwd
       - run: npm ci
       - run: npm run test
       - run: npm run build
